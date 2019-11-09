@@ -1,18 +1,18 @@
 # administration
 tuto admin Django
 
-#1-list_display
-#2-list_filter
-#3-search_field
-#4-date_hierarchy
-#5-actions
-#6-list_display_links
-#7-ordering
-#8-inlines
-#9-readonly_fields
-#10-list_per_page
-#11-filter_horizontal
-#12-fieldsets
+# 1-list_display
+# 2-list_filter
+# 3-search_field
+# 4-date_hierarchy
+# 5-actions
+# 6-list_display_links
+# 7-ordering
+# 8-inlines
+# 9-readonly_fields
+# 10-list_per_page
+# 11-filter_horizontal
+# 12-fieldsets
 
 
 # 1- Importation des models dans le fichier admin.py : 
