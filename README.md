@@ -52,13 +52,13 @@ suivre le tuto sur le github de parrain
           list_filter = ('date_add', 'date_upd', 'statut',)
           search_field = ('nom')
           actions = ('active', 'desactive') 
-          def active(self, queryset, request):
-              queryset.update(statut == True)
+          def active(self, request, queryset):
+              queryset.update(statut = True)
               self.message_user(request, 'Activer une categorie')
           active.short_description = 'active categorie'
 
-          def desactive(self, queryset, request):
-              queryset.update(statut == False)
+          def desactive(self, request, queryset):
+              queryset.update(statut = False)
               self.message_user(request, 'Desactiver une categorie')
           desactive.short_description = 'desactive categorie'
           ordering = ('nom',)
@@ -91,13 +91,13 @@ suivre le tuto sur le github de parrain
           # MODIFIER LES SATATUTS DU MODEL DANS L'ADMIN #
           
           actions = ('active', 'desactive') 
-          def active(self, queryset, request):
-              queryset.update(statut == True)
+          def active(self, request, queryset):
+              queryset.update(statut = True)
               self.message_user(request, 'Activer une categorie')
           active.short_description = 'active categorie'
 
-          def desactive(self, queryset, request):
-              queryset.update(statut == False)
+          def desactive(self, request, queryset):
+              queryset.update(statut = False)
               self.message_user(request, 'Desactiver une categorie')
           desactive.short_description = 'desactive categorie'
 
