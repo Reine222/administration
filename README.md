@@ -151,6 +151,14 @@ suivre le tuto sur le github de parrain
 
           def detail_image(self, obj):
               return mark_safe('<img src = "{url}" width ="100px" height ="100px" />'.format(url = obj.image.url))
+         
+         
+          # FONCTION PERMETTANT D'AFFICHER UN AUDIO DANS LA TABLE ET LE DETAIL DU MODEL #
+          def view_audio(self,obj):
+              if obj.audio:
+                  return mark_safe('<audio width="80px", heigth="80px" controls> <source src="{img_url}" type="audio/mpeg"></audio>'.format(img_url=obj.audio.url))
+              else:
+                  return mark_safe('<p>Aucune audio</p>')
 
 
 
